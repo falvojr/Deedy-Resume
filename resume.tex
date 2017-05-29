@@ -1,0 +1,235 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{resume}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Venilton}{FalvoJr}{ \urlstyle{same}
+\href{mailto:falvojr@gmail.com}{falvojr@gmail.com} \\ +55 16 99721-8281
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{University of Sao Paulo}
+\descript{PhD in Computer Engineering}
+\location{Exp. 2020 | Sao Carlos, SP, Brazil}
+Special Student\\
+\location{ Cum. GPA: 4.0 / 4.0}
+\sectionsep
+\descript{Msc in Computer Engineering}
+\location{Apr 2015 | Sao Carlos, SP, Brazil}
+\location{ Cum. GPA: 3.77 / 4.0}
+\sectionsep
+
+\subsection{UNIARA}
+\descript{BS in Computer Engineering}
+\location{Dec 2011 | Araraquara, SP, Brazil}
+\location{ Cum. GPA: 3.26 / 4.0}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+Github:// \href{https://github.com/falvojr}{\bf falvojr} \\
+LinkedIn://  \href{https://www.linkedin.com/in/falvojr}{\bf falvojr}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+Compilers \\
+Concurrent Programming \\
+Distributed Systems \\
+Operating Systems \\
+Project Management \\
+Real Time Systems \\
+Software Engineering + Practicum \\
+\sectionsep
+
+\subsection{Undergraduate}
+Artificial Intelligence \\
+Experimental Software Engineering \\
+Human Computer Interaction \\
+Software Architecture \\
+Software Testing and Validation \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Expertise:}
+Android \textbullet{} CSS \textbullet{} C\# \textbullet{} Express \\
+Git \textbullet{} Gradle \textbullet{} Java \textbullet{} GNU/Linux \\
+Maven \textbullet{} MongoDB (NoSQL) \\
+Node.js \textbullet{} REST \textbullet{} Spring \textbullet{} SQL \\ 
+\sectionsep
+\location{Working Knowledge:}
+AngularJS \textbullet{} AWS \textbullet{} CSS \textbullet{} Docker \\
+Gulp \textbullet{} Jenkins \textbullet{} Kotlin \textbullet{} Vagrant \\
+\sectionsep
+\location{Familiar:}
+C \textbullet{} C++ \textbullet{} Objective-C \textbullet{} \LaTeX\ \\ 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Cast Group}
+\descript{| Technology Specialist }
+\location{Oct 2008 - Present | Araraquara, SP, Brazil}
+Create or design the most appropriate software architecture, such that it suits the business needs, satisfies stakeholder requirements, and achieves the desired results under given constraints.
+\sectionsep
+
+\runsubsection{Brain Machine}
+\descript{| Co-Founder }
+\location{Feb 2016 - Present | Araraquara, SP, Brazil}
+Collaborator in the startup's projects.
+\sectionsep
+
+\runsubsection{IFSP}
+\descript{| Substitute Teacher }
+\location{Mar 2016 - Present | Araraquara, SP, Brazil}
+Teach to higher and technical education at Federal Institute of Education, Science and Technology of Sao Paulo (IFSP).
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{Digio}
+\descript{| Cast Group | Banco CBSS}
+\location{Oct 2016 – Mar 2017 | Barueri, SP, Brazil}
+Digio is a fintech that offers a VISA credit card with full management via app. Available for \textbf{\href{https://goo.gl/zvebsh}{Android}} and iOS.
+\sectionsep
+
+\runsubsection{The Dining Club}
+\descript{| Brain Machine | The Dining Club}
+\location{Feb 2016 – Jul 2016 | Brisbane, QLD, Australia}
+\textbf{\href{https://www.thediningclub.com.au}{The Dining Club}} is a company/website with the best restaurants of the Australia that offers exclusive discounts to your members.
+\sectionsep
+
+\runsubsection{Ourocard}
+\descript{| Cast Group | Banco do Brasil}
+\location{Sep 2015 – Dec 2015 | Brasilia, DF, Brazil}
+Pioneering project in the use of Host Card Emulation (HCE) technology in Brazil and first solution of the world launched by a bank to mobile payments with multiple cards (debit and credit). Available for \textbf{\href{https://goo.gl/T7oLwj}{Android}} and iOS.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rll}
+2011 & Best Student & CREA-SP Award: Vocational Training\\
+2011 & Best Student & Institute of Engineering Award\\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications} 
+\sectionsep
+\sectionsep
+\bibliographystyle{abbrv}
+\bibliography{publications}
+\nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
